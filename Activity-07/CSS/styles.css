@@ -1,0 +1,32 @@
+/* Body styling */
+body {
+    background-color: #99dbd081;
+    align-content: center;
+}
+
+/* Header styling */
+header {
+    background-color: rgb(97, 156, 138);
+    text-align: center;
+    padding: 10px;
+}
+
+/* Section h1 styling */
+section h1 {
+    color: #58af07;
+    text-align: center;
+}
+
+/* Image styling */
+img {
+    box-shadow: 5px 5px 15px grey;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgb(97, 156, 138);
+    text-align: center;
+    padding: 10px;
+}
