@@ -1,6 +1,7 @@
 /* Body styling */
 body {
-    background-color: #99dbd081;
+    font-family: 'Roboto', sans-serif;
+    background-color: #11750881;
     align-content: center;
 }
 
@@ -26,7 +27,7 @@ img {
 
 /* Footer styling */
 footer {
-    background-color: rgb(97, 156, 138);
+    background-color: rgb(14, 92, 31);
     text-align: center;
     padding: 10px;
 }
