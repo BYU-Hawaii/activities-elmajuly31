@@ -1,13 +1,13 @@
 /* Body styling */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jacquard 12', sans-serif;
     background-color: #11750881;
     align-content: center;
 }
 
 /* Header styling */
 header {
-    background-color: rgb(97, 156, 138);
+    background-color: rgb(20, 85, 17);
     text-align: center;
     padding: 10px;
 }
@@ -20,7 +20,7 @@ section h1 {
 
 /* Image styling */
 img {
-    box-shadow: 5px 5px 15px grey;
+    box-shadow: 5px 5px 15px rgb(231, 235, 22);
     display: block;
     margin: 0 auto;
 }
