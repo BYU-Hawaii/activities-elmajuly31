@@ -12,50 +12,52 @@ body {
 /* Styling for the header */
 header {
     background-color: #333;
-    color: rgb(237, 244, 250);
+    color: rgb(189, 203, 214);
     padding: 10px 0;
     text-align: center;
+
 }
 
 /* Styling for the navigation menu */
 nav ul {
-    list-style-image:url('../images/star.png');
     margin: 0;
     padding: 0;
     background-color: #117761;
+    
 }
 
 nav ul li {
-    display: inline;
+    display:contents;
     margin-right: 10px;
 }
 
 nav ul li a {
-    color: rgb(225, 231, 235);
-    text-decoration:double;
+    color: rgb(226, 235, 241);
     padding: 5px 10px;
+    text-decoration:double;
     display: inline-block;
     text-align: center;
 }
 
 nav ul li a:hover {
-    background-color: #dd4040;
+    background-color: #0c0707;
 }
 
 /* Styling for the main content sections */
 section {
     padding: 20px;
-    color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(19, 16, 16);
 }
 
 /* Styling for the footer */
 footer {
-    background-color: #205e49;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+    font-style: bold;
+    color: rgb(19, 16, 16);
+    text-align: left;
+    padding: 0;
     position: fixed;
-    width: 100%;
+    width: 50;
     bottom: 0;
 }
 
@@ -70,9 +72,14 @@ figure img {
     width: 400;
     height: 200; 
     padding: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    border-style:double;
+    border-width: 5px;
 }
 
 figcaption {
-    margin-top: 5px;
     font-style: italic;
+
+
 }
