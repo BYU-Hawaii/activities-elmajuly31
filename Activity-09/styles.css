@@ -5,9 +5,16 @@ body{
 .main-content{
     display: flex;
     justify-content: space-between;
+    border: 1px solid 
 }
 
 .column{
     flex: 1;
     padding: 20px;
+}
+
+.sunset{
+    border: 5px solid black;
+    border-radius: 5px;
+    border-style: dashed;
 }
