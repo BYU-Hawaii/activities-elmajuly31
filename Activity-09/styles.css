@@ -1,11 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color:bisque
+    
     
 }
 header {
-    background-color: #fff;
+    background-color: #cf6f37;
     padding: 20px;
     text-align: center;
 }
@@ -30,20 +32,19 @@ nav ul li{
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(233, 227, 227);
     text-decoration: none;
 }
 
 .main-content {
-    display: block;
+    display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 2em;
 }
 
 .column{
     flex: 1;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 1em;
     border-radius: 10px;
     box-shadow: 0 2px 5px;  
 }
