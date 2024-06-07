@@ -2,6 +2,7 @@ body {
     background-color: rgb(222, 228, 136);
     margin: 0;
     font-family: Impact;
+    box-sizing: border-box;
   }
   
   header {
