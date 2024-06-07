@@ -30,6 +30,7 @@ body {
 
 .nav {
   grid-area: nav;
+  text-align: center;
   background-color: black;
 }
 
@@ -38,11 +39,10 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
 }
 
 .nav li {
-  margin: 10px 0;
+  margin: 10px;
 }
 
 .nav a {
@@ -58,49 +58,36 @@ body {
   grid-area: main;
   padding: 10px;
 }
-figure {
+
+/* Flexbox Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
   margin: 5px;
-  text-align: center; 
+  border: 3px solid rgb(20, 11, 11);
 }
 
 figcaption {
   font-style: italic;
 }
 
-  /* Flexbox Gallery */
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .gallery img {
-    max-width:100%; 
-    height: auto; 
-    margin: 5px; 
-    border: 3px solid rgb(20, 11, 11);
-  }
-
-  .gallery figure {
-    max-width:100%; 
-    height: auto; 
-    margin: 5px; 
-  }
-
 /* Adjust gallery layout based on screen width */
 @media (min-width: 768px) {
-  .gallery figure {
-    width: calc(50% - 8px); /* Display images in two columns */
-    
+  .gallery figure{
+    width: calc(50% - 10px);
   }
-
   .grid-container {
     grid-template-areas:
-      "header "
+      "header"
       "nav"
-      "main"
+      "main "
       "footer";
-      grid-template columns: 1fr 2fr;
   }
 
   .nav ul {
@@ -109,9 +96,8 @@ figcaption {
   }
 
   .nav li {
-    margin: 0 20px;
+    margin: 20px;
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -119,8 +105,6 @@ figcaption {
     width: calc(33.33% - 10px); /* Display images in three columns */
   }
 }
-
-
 
 .footer {
   grid-area: footer;
