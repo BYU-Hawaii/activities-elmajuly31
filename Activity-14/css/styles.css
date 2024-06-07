@@ -2,14 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   background-color: rgb(38, 145, 130);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-align: center;
 }
 
@@ -22,7 +20,6 @@ body {
     "main"
     "footer";
   grid-gap: 10px;
-  padding: 10px;
 }
 
 .header {
@@ -42,7 +39,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .nav li {
@@ -60,7 +56,7 @@ body {
 
 .main {
   grid-area: main;
-  padding: 20px;
+  padding: 10px;
 }
 figure {
   margin: 5px;
@@ -71,8 +67,42 @@ figcaption {
   font-style: italic;
 }
 
-/* Change navigation bar to horizontal on screens wider than 768px */
+  /* Flexbox Gallery */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .gallery img {
+    max-width:100%; 
+    height: auto; 
+    margin: 5px; 
+    border: 3px solid rgb(20, 11, 11);
+  }
+
+  .gallery figure {
+    max-width:100%; 
+    height: auto; 
+    margin: 5px; 
+  }
+
+/* Adjust gallery layout based on screen width */
 @media (min-width: 768px) {
+  .gallery figure {
+    width: calc(50% - 8px); /* Display images in two columns */
+    
+  }
+
+  .grid-container {
+    grid-template-areas:
+      "header "
+      "nav"
+      "main"
+      "footer";
+      grid-template columns: 1fr 2fr;
+  }
+
   .nav ul {
     flex-direction: row;
     justify-content: center;
@@ -82,41 +112,15 @@ figcaption {
     margin: 0 20px;
   }
 
-  /* Adjust grid layout to two-column format */
-  .grid-container {
-    grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
-  }
-}
-
-/* Flexbox Gallery */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gallery img {
-  max-width: 100%;
-  height: auto;
-  margin: 5px;
-  border: 3px solid rgb(20, 11, 11);
-}
-
-/* Adjust gallery layout based on screen width */
-@media (min-width: 768px) {
-  .gallery img {
-    width: calc(50% - 10px);
-  }
 }
 
 @media (min-width: 1024px) {
-  .gallery img {
-    width: calc(33.33% - 10px);
+  .gallery figure {
+    width: calc(33.33% - 10px); /* Display images in three columns */
   }
 }
+
+
 
 .footer {
   grid-area: footer;
