@@ -1,6 +1,6 @@
 /* General styling for the entire webpage */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Forte;
     margin: 0;
     padding: 0;
     background: url('../images/coco.jpg') no-repeat center center fixed; /* Background image for the entire page */
@@ -11,32 +11,36 @@ body {
 
 /* Styling for the header */
 header {
-    background-color: #333;
-    color: rgb(189, 203, 214);
-    padding: 10px 0;
+    background-color: #304f5c;
+    padding: 10px;
     text-align: center;
 
+}
+
+nav{
+    text-align: center;
 }
 
 /* Styling for the navigation menu */
 nav ul {
-    margin: 0;
+    list-style-type: none;
     padding: 0;
-    background-color: #117761;
+    margin: 0;
+    display: flex;
+    background-color: black;
     
 }
 
 nav ul li {
-    display:contents;
-    margin-right: 10px;
+    margin: 10px;
+    
 }
 
 nav ul li a {
     color: rgb(226, 235, 241);
-    padding: 5px 10px;
-    text-decoration:double;
-    display: inline-block;
-    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    
 }
 
 nav ul li a:hover {
@@ -46,40 +50,47 @@ nav ul li a:hover {
 /* Styling for the main content sections */
 section {
     padding: 20px;
-    text-align: center;
+    text-align: justify;
     color: rgb(19, 16, 16);
-}
-
-/* Styling for the footer */
-footer {
-    font-style: bold;
-    color: rgb(19, 16, 16);
-    text-align: left;
-    padding: 0;
-    position: fixed;
-    width: 50;
-    bottom: 0;
 }
 
 /* Styling for images and their captions */
 figure {
-    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     
 }
 
-figure img {
-    width: 400;
-    height: 200; 
+figure img { 
+    max-width: 100%;
+    height: auto;
     padding: 5px;
-    border: 1px solid black;
-    border-radius: 20px;
-    border-style:double;
-    border-width: 5px;
+    border: 3px solid black;
+
 }
 
 figcaption {
     font-style: italic;
+}
 
+@media (min-width: 768px) {
+    figure img{
+      width: calc(50% - 10px);
+    }
 
+    
+  }
+  
+  @media (min-width: 1024px) {
+    figure img{
+      width: calc(33.33% - 10px); /* Display images in three columns */
+    }
+  }
+
+/* Styling for the footer */
+footer {
+    background-color: #117761;
+    color: rgb(19, 16, 16);
+    padding: 10px;
 }
