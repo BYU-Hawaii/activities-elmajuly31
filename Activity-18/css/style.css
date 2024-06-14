@@ -1,0 +1,58 @@
+/* Base styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+button {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #171a1f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback {
+  display: none;
+  color: red;
+  margin-bottom: 0.5rem;
+}
+
+.valid-feedback {
+  color: green;
+}
+
+/* Media query for desktop view */
+@media (min-width: 768px) {
+  form {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  label {
+      width: 30%; /* Adjust as needed */
+      text-align: right;
+      margin-right: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+      width: 65%; /* Adjust as needed */
+  }
+}
