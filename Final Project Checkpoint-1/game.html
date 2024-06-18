@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kid-Friendly Interactive Website</title>
+    <title>Play Game - FunTime</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to FunTime!</h1>
+        <h1>FunTime Games</h1>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -18,10 +19,13 @@
         </nav>
     </header>
     <main>
-        <section class="welcome-section">
-            <img src="images/welcome_img.png" alt="Welcome Image">
-            <h2>Discover a world of fun and learning!</h2>
-            <button onclick="location.href='game.html'">Start Playing</button>
+        <section class="game-section">
+            <h2>Let's Play!</h2>
+            <p>Choose a game below and start having fun!</p>
+            <div id="game-container">
+                <!-- AI-generated content will be inserted here -->
+            </div>
+            <button onclick="generateGame()">Generate a New Game</button>
         </section>
     </main>
     <footer>
