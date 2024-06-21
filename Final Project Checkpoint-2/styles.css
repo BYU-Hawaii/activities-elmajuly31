@@ -2,11 +2,14 @@ body {
   font-family: 'Arial';
   margin: 0;
   padding: 0;
-  background-color: aquamarine;
+  background: url('images/fruit.jpg') no-repeat center center fixed;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 header {
-  background-color: #c21313;
+  background-color: #619b31;
   padding: 20px;
   text-align: center;
   color: white;
@@ -27,9 +30,16 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  color: #ffcc00; 
+
+}
+
 main {
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   text-align: center;
+  align-content: center;
 }
 
 .welcome-section, .about-section, .game-section {
@@ -78,7 +88,7 @@ button:hover {
 }
 
 footer {
-  background-color: #c21313;
+  background-color:  #619b31;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -129,4 +139,26 @@ footer {
 
 .feedback-section button:hover {
   background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  header {
+      padding: 10px;
+  }
+  header h1 {
+      font-size: 1.5rem;
+  }
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+  .welcome-section, .about-section, .game-section {
+    margin: 20px 0;
+  }
+  
+  .welcome-section img, .team-member img {
+    width: 100%;
+    max-width: 300px;
+  }
 }

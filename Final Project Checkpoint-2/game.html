@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Game - Guess the number</title>
+    <title>Play Game - Unscramble!</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Guess the number</h1>
+        <h1>Word Scramble!</h1>
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -21,14 +21,14 @@
         </nav>
     </header>
     <main>
-        <section class="game-section">
-            <h2>Let's Play!</h2>
-            <p>Choose a game below and start having fun!</p>
-            <div id="game-container">
-                <!-- AI-generated content will be inserted here -->
-            </div>
-            <button onclick="generateGame()">Generate a New Game</button>
-        </section>
+        <div class="container">
+            <h1>Word Scramble Game</h1>
+            <div id="scrambled-word"></div>
+            <input type="text" id="word-input" placeholder="Enter the correct word">
+            <button id="check-btn">Check</button>
+            <p id="feedback"></p>
+        </div>
+        <script src="script.js"></script>
     </main>
     <footer>
         <p>&copy; 2024 FunTime. All rights reserved.</p>
