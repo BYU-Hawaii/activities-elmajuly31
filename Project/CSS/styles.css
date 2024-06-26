@@ -1,9 +1,9 @@
 /* Reset default styles */
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
 /* General styling for the entire webpage */
 body {
     margin: 0;
@@ -34,25 +34,28 @@ body {
   
   .nav {
     grid-area: nav;
-    text-align: center;
-    background-color: black;
-    
+    background-color: #333;
+    color: #fff;
   }
-  
+
   .nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: inline;
+    justify-content: center;
   }
-  
+
   .nav li {
-    margin: 10px;
+      margin: 10px;
   }
-  
+
   .nav a {
-    color: white;
-    text-decoration: none;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+      transition: background-color 0.3s ease;
   }
   
   .nav a:hover {
@@ -62,7 +65,7 @@ body {
   .section {
     grid-area: main;
     padding: 10px;
-    background-color:white;
+    background-color:rgb(255, 255, 255, 0.5);
     text-align: center;
   }
   
@@ -98,13 +101,7 @@ body {
     }
   
     .nav ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-  
-    .nav li {
-      margin: 20px;
+      display:flex;
     }
   }
   
